@@ -23,6 +23,17 @@ public class Main {
 
     public static void task2 () {
         System.out.println("Задача 2");
-
+        byte airTemperature = 4;
+        if (airTemperature >= 5) {
+            System.out.println("На улице " + airTemperature + " грудсов, нужно надеть шапку.");
+        } else {
+            System.out.println("На улице " + airTemperature + " грудса, можно идти без шапки.");
+        }
+        airTemperature += 2;
+        if (airTemperature >= 5) {
+            System.out.println("На улице " + airTemperature + " грудсов, нужно надеть шапку.");
+        } else {
+            System.out.println("На улице " + airTemperature + " грудса, можно идти без шапки.");
+        }
     }
 }
