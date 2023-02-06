@@ -82,5 +82,16 @@ public class Main {
     }
     public static void task5() {
         System.out.println("Задача 5");
+        byte ageChild = 4;
+        if (ageChild < 5) {
+            System.out.println("Есди возраст ребенка равен " + ageChild + ", то он не может кататься на аттракционе");
+        }
+        ageChild += 5;
+        boolean escort = true;
+        if (ageChild >= 5 && ageChild < 15 && escort) {
+            System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься на аттракционе, только в сопровождении взрослого.");
+        } else {
+            System.out.println("Если возраст ребенка равен " + ageChild + ", то он  не может кататься на аттракционе, без сопровождения взрослого.");
+        }
     }
 }
