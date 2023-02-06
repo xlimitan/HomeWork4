@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -112,6 +113,18 @@ public class Main {
             System.out.println("В вагоне есть стоячие места");
         } else {
             System.out.println("В вагоне нету места");
+        }
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        byte one = 1;
+        byte two = 2;
+        byte three = 3;
+        boolean answer = one < two && one < three && two < three;
+        if (answer) {
+            System.out.println("Three самое больше число");
+        } else {
+            System.out.println("Three не самое большое число");
         }
     }
 }
