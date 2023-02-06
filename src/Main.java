@@ -10,6 +10,7 @@ public class Main {
     }
 
     public static void task1() {
+        System.out.println("Hello world");
         System.out.println("Задача 1");
         byte age = 19;
         if (age >= 18) {
