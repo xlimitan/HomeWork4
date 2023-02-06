@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -88,10 +89,29 @@ public class Main {
         }
         ageChild += 5;
         boolean escort = true;
-        if (ageChild >= 5 && ageChild < 15 && escort) {
+        boolean fulfilledTheConditions14 = ageChild >= 5 && ageChild < 15 && escort;
+        if (fulfilledTheConditions14) {
             System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься на аттракционе, только в сопровождении взрослого.");
         } else {
-            System.out.println("Если возраст ребенка равен " + ageChild + ", то он  не может кататься на аттракционе, без сопровождения взрослого.");
+                System.out.println("Если возраст ребенка равен " + ageChild + ", то он  не может кататься на аттракционе, без сопровождения взрослого.");
+        }
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        byte vanCapacity = 102;
+        byte numberOfSeats = 60;
+        short totalPerson = 59;
+        boolean thereAreSeats = totalPerson < 60;
+        boolean thereArePlacesForStanding = totalPerson < 102 && totalPerson > numberOfSeats;
+        if (thereAreSeats) {
+            System.out.println("В вагоне есть сидячие и стоячие места");
+        }
+        totalPerson += 20;
+        boolean thereArePlacesForStanding2 = totalPerson < 102 && totalPerson > numberOfSeats;
+        if (thereArePlacesForStanding2) {
+            System.out.println("В вагоне есть стоячие места");
+        } else {
+            System.out.println("В вагоне нету места");
         }
     }
 }
