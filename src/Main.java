@@ -2,9 +2,10 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
-    public static void task1 () {
+    public static void task1() {
         System.out.println("Задача 1");
         byte age = 17;
         if (age >= 18) {
@@ -21,7 +22,7 @@ public class Main {
 
     }
 
-    public static void task2 () {
+    public static void task2() {
         System.out.println("Задача 2");
         byte airTemperature = 4;
         if (airTemperature >= 5) {
@@ -34,6 +35,22 @@ public class Main {
             System.out.println("На улице " + airTemperature + " грудсов, нужно надеть шапку.");
         } else {
             System.out.println("На улице " + airTemperature + " грудса, можно идти без шапки.");
+        }
+    }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        byte speedLimit = 61;
+        if (speedLimit >= 60) {
+            System.out.println("Если скорость " + speedLimit + ", то придется заплатить штраф.");
+        } else {
+            System.out.println("Если скорость " + speedLimit + ", то можно ездить спокойно.");
+        }
+        speedLimit -= 2;
+        if (speedLimit >= 60) {
+            System.out.println("Если скорость " + speedLimit + ", то придется заплатить штраф.");
+        } else {
+            System.out.println("Если скорость " + speedLimit + ", то можно ездить спокойно.");
         }
     }
 }
